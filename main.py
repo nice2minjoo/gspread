@@ -8,7 +8,7 @@ import gspread
 import pandas as pd
 
 credentials = st.secrets["service_account"]
-sa = gspread.service_account("credentials")
+sa = gspread.service_account(r"credentials")
 sh = sa.open("회비")
 worksheet_list = sh.worksheets() # The total number of worksheets
 
